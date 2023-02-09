@@ -1,6 +1,3 @@
-import Background from '../assets/Background2.jpg';
-import Image from 'next/image';
-
 const home = () => {
   return (
     <div className="h-screen mb-[32rem]">
