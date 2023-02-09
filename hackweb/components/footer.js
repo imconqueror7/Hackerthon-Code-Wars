@@ -27,9 +27,9 @@ const footer = () => {
             </div>
             <div className="md:px-16 md:p-5 p-10">
                 <ul className="text-gray-600 ">
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Home</a></li>
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Services</a></li>
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Privacy Policy</a></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Home</Link></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Services</Link></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Privacy Policy</Link></li>
                 </ul>
             </div>
             <div className="p-5 md:py-0 py-8 ">
