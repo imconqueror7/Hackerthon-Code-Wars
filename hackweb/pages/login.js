@@ -1,8 +1,25 @@
+import React, { useEffect, useState } from "react";
+import {auth,provider} from "./config";
+import {signInWithPopup} from "firebase/auth";
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import Link from 'next/link';
+
 const Login = () => {
+
+    const [value,setValue] = useState('')
+    const handleClick =()=>{
+        signInWithPopup(auth,provider).then((data)=>{
+            setValue(data.user.email)
+            localStorage.setItem("email",data.user.email)
+        })
+    }
+
+    useEffect(()=>{
+        setValue(localStorage.getItem('email'))
+    })
+
     return (
         <div className="flex mb-[52rem]">
             <main className="absolute md:flex flex-col items-center justify-center w-full md:h-screen flex-1 text-center">
@@ -48,7 +65,7 @@ const Login = () => {
                                     </label>
                                     <Link href="#" className="text-sm hover:font-underline">Forgot Password?</Link>
                                 </div>
-                            <Link href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Log In</Link>
+                            <button onClick={handleClick} className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Log In</button>
                         </div>
                     </div>
                     <div className=" md:w-2/5 bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] text-white shadow-md shadow-gray-400 py-36 px-12 ">
