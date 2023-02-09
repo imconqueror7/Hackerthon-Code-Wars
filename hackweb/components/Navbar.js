@@ -13,7 +13,7 @@ const Navbar = () => {
     const changeColor= () =>{
       if(window.scrollY >=100) {
         setColor('#ffffff')
-        setTextColor('#642b08')
+        setTextColor('#091275')
       }
       else{
         setColor('transparent')
