@@ -1,8 +1,14 @@
-import React from 'react';
+import Navbar from '../components/navbar';
+import Home from '../pages/home';
+import Footer from '../components/footer';
 
 const page = () => {
   return (
-    <div className='font-bold text-2xl text-center'>Abhishek kaam karle</div>
+    <>
+      <Navbar/>
+      <Home/>
+      <Footer/>
+    </>
   )
 }
 
