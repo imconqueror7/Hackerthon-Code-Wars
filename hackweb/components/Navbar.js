@@ -29,12 +29,13 @@ const Navbar = () => {
       name: "Home"
     },
     {
-      id: '/teampage',
-      name: "Team"
-    },
-    {
       id: '/contactpage',
       name: "Contact Us"
+    },
+    {
+      id:'/teampage',
+      name:"Team Page"
+
     },
     {
       id: '/signup',
