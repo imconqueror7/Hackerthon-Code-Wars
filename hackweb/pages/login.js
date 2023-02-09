@@ -1,8 +1,29 @@
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
+import {signInWithPopup} from "firebase/auth"; 
+import {auth, provider} from './config';
+import HomePage from './HomePage';
+
 
 const Login = () => {
+    const [value, setValue] = useState('')
+    const handleClick = () => {
+        signInWithPopup(auth, provider).then((data) => {
+            setValue(data.user.email)
+            localStorage.setItem("email" , data.user.email) 
+
+        })
+    }
+
+    useEffect(() => {
+      setValue (localStorage.getItem('email'))
+    
+      return () => {
+        second
+      }
+    }, [third])
+    
     return (
         <div className="flex md:mb-[28rem] mb-[50rem]">
             <main className="absolute md:flex flex-col items-center justify-center w-full md:h-screen flex-1 text-center">
@@ -12,6 +33,7 @@ const Login = () => {
                             <span className="font-normal">Hack</span>Web
                         </div>
                         <div className="py-4">
+                            {value? <HomePage/>:
                             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-[#bf5f23] mb-2">Log In to Account</h2>
                                 <div className="border-2 md:w-96 w-40 border-black inline-block mb-2"></div>
                                 <div className="flex justify-center my-2 text-gray-400">
@@ -48,7 +70,7 @@ const Login = () => {
                                     </label>
                                     <a href="#" className="text-sm hover:font-underline">Forgot Password?</a>
                                 </div>
-                                <a href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-100 hover:border-white">Log In</a>
+                                <a onClick = {handleClick}  href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#b45419] text-[#b45419] hover:text-[white] hover:bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] hover:tracking-wider duration-100 hover:border-white">Log In</a>
                         </div>
                     </div>
                     <div className=" md:w-2/5 bg-gradient-to-tr from-[#953508] via-[#ca6512] to-[#f3ba2b] text-white shadow-md shadow-gray-400 py-36 px-12 ">

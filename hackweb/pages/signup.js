@@ -1,6 +1,8 @@
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
+import {auth, provider} from './google_section/config';
+import {signInWithPopup} from "firebase/auth"; 
 
 const Signup = () => {
     return (
