@@ -1,7 +1,7 @@
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FaFacebookF, FaGoogle, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-
+import Link from 'next/link';
 const Login = () => {
     return (
         <div className="flex mb-[52rem]">
@@ -15,18 +15,18 @@ const Login = () => {
                             <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-[#1e3ecb] mb-2">Log In to Account</h2>
                                 <div className="border-2 md:w-96 w-40 border-black inline-block mb-2"></div>
                                 <div className="flex justify-center my-2 text-gray-400">
-                                    <a href="#" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
+                                    <Link href="/" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
                                         <FaFacebookF className="text-sm" />
-                                    </a>
-                                    <a href="#" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
+                                    </Link>
+                                    <Link href="/" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
                                         <FaGoogle className="text-sm" />
-                                    </a>
-                                    <a href="#" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
+                                    </Link>
+                                    <Link href="/" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
                                         <FaLinkedinIn className="text-sm" />
-                                    </a>
-                                    <a href="#" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
+                                    </Link>
+                                    <Link href="/" className="border-2 border-gray-400 rounded-full p-3 mx-1 hover:border-gray-700 hover:text-gray-700">
                                         <FaTwitter className="text-sm" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <p className="text-gray-400">OR</p>
                                 <p className="text-gray-400 my-4"> Use your Email instead.</p>
@@ -46,9 +46,9 @@ const Login = () => {
                                     <label className="flex items-center text-sm cursor-pointer"><input type="checkbox" name="remember" className="mr-1 cursor-pointer" />
                                         Remember Me
                                     </label>
-                                    <a href="#" className="text-sm hover:font-underline">Forgot Password?</a>
+                                    <Link href="#" className="text-sm hover:font-underline">Forgot Password?</Link>
                                 </div>
-                            <a href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Log In</a>
+                            <Link href="/" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Log In</Link>
                         </div>
                     </div>
                     <div className=" md:w-2/5 bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] text-white shadow-md shadow-gray-400 py-36 px-12 ">
@@ -57,7 +57,7 @@ const Login = () => {
                         <div className="border-2 w-60 border-white inline-block mb-2 "></div>
                         <p> Don&apos;t have an account yet?</p>
                         <p className="mb-8 text-gray-100"> Sign up now & start detecting.</p>
-                        <a href="/signup" className=" border-2 border-white rounded-full py-2 px-12 inline-block font-semibold hover:bg-white hover:text-[#1e3ecb] hover:tracking-wider duration-100 hover:border-none">Sign Up</a>
+                        <Link href="/signup" className=" border-2 border-white rounded-full py-2 px-12 inline-block font-semibold hover:bg-white hover:text-[#1e3ecb] hover:tracking-wider duration-100 hover:border-none">Sign Up</Link>
                     </div>
                 </div>
             </main>

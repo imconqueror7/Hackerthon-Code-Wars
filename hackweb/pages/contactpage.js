@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import Background from '../public/assests/image2.webp';
+import Background from '../public/assests/image1.avif';
 
 const contactpage = () => {
   return (

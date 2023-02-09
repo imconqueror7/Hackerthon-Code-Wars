@@ -27,25 +27,25 @@ const footer = () => {
             </div>
             <div className="md:px-16 md:p-5 p-10">
                 <ul className="text-gray-600 ">
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Home</a></li>
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Services</a></li>
-                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><a href="/">Privacy Policy</a></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Home</Link></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Services</Link></li>
+                    <li className="hover:bg-gray-200 rounded-md h-6 md:w-36 w-32 px-2"><Link href="/">Privacy Policy</Link></li>
                 </ul>
             </div>
             <div className="p-5 md:py-0 py-8 ">
             <h3 className="text-gray-600 md:text-lg">Follow Us</h3>
               <div className=" md:flex grid grid-cols-3 p-3 ">
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
-                <a href="https://www.instagram.com/mardav_113/" target="blank"><FaInstagram /></a>
+                <Link href="https://www.instagram.com/mardav_113/" target="blank"><FaInstagram /></Link>
                 </div>
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
-                <a href="https://twitter.com/mardav_13" target="blank"><FaTwitter/></a>
+                <Link href="https://twitter.com/mardav_13" target="blank"><FaTwitter/></Link>
                 </div>
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
-                  <a href="https://github.com/mardavsj" target="blank"><FaGithub/></a>
+                  <Link href="https://github.com/mardavsj" target="blank"><FaGithub/></Link>
                 </div>
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
-                <a href="https://www.linkedin.com/in/mardav-jadaun-13s/" target="blank"><FaLinkedin /></a>
+                <Link href="https://www.linkedin.com/in/mardav-jadaun-13s/" target="blank"><FaLinkedin /></Link>
                 </div>
               </div>
             </div>
