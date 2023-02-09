@@ -1,10 +1,24 @@
+import React, { useEffect, useState } from "react";
+import { auth, provider } from "./config";
+import { signInWithPopup } from "firebase/auth";
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
-import Link from 'next/link';
-
 
 const Signup = () => {
+
+    const [value, setValue] = useState('')
+    const handleClick = () => {
+        signInWithPopup(auth, provider).then((data) => {
+            setValue(data.user.email)
+            localStorage.setItem("email", data.user.email)
+        })
+    }
+
+    useEffect(() => {
+        setValue(localStorage.getItem('email'))
+    })
+
     return (
         <div className="flex mb-[52rem]">
             <main className="absolute md:flex flex-col items-center justify-center w-full  md:h-screen flex-1 text-center">
@@ -47,7 +61,7 @@ const Signup = () => {
                                     <input type="password" placeholder="Confirm Password" className="bg-gray-100 outline-none flex-1" />
                                 </div>
                             </div>
-                            <Link href="/login" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</Link>
+                            <button onClick={handleClick} className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</button>
                         </div>
                     </div>
                 </div>
