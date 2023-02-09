@@ -47,8 +47,8 @@ const Navbar = () => {
     <div style={{backgroundColor: `${color}`}} className="fixed left-0 top-0 w-full z-10 ease-in duration-500">
       <div className="max-w-[1100px] m-auto flex justify-between items-center p-4">
           <h1 style={{ color: `${textColor}` }} className="text-2xl">HackWeb</h1>
-        <div className="w-96 justify-center py-4">
-          <input type="text" className=" w-96 px-3 bg-white border-slate-300 rounded-md text-sm placeholder-slate-500 shadow-md shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Select urls" />
+        <div className="w-96 justify-center">
+          <input type="text" className=" w-96 h-8 px-3 bg-white border-slate-300 rounded-md text-sm placeholder-slate-500 shadow-md shadow-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Select urls" />
         </div>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex uppercase font-sans text-sm ease-in-out duration-500">
           <li className="px-4 hover:font-semibold duration-200 ">
