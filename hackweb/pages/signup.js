@@ -1,6 +1,7 @@
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
+import Link from 'next/link';
 
 const Signup = () => {
     return (
@@ -45,7 +46,7 @@ const Signup = () => {
                                     <input type="password" placeholder="Confirm Password" className="bg-gray-100 outline-none flex-1" />
                                 </div>
                             </div>
-                            <a href="/login" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</a>
+                            <Link href="/login" className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</Link>
                         </div>
                     </div>
                 </div>
