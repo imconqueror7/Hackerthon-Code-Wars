@@ -33,6 +33,11 @@ const Navbar = () => {
       name: "Contact Us"
     },
     {
+      id:'/teampage',
+      name:"Team Page"
+
+    },
+    {
       id: '/signup',
       icon: <BsPerson/>
     }
@@ -49,7 +54,7 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200">
-            <Link href='/productpage'>Products</Link>
+            <Link href='/productpage'>Team</Link>
           </li>
           <li className="px-4 hover:font-semibold duration-200 ">
             <Link href='/contactpage'><div>Contact us</div></Link>
