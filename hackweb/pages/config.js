@@ -1,7 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import {getAuth, GoogleAuthProvider} from "firebase/auth";
-
+import {getAuth,GoogleAuthProvider} from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyD-ud5wELd8Sb6qBkgljlYce15N6ZfqnPw",
   authDomain: "hackweb-d5c9b.firebaseapp.com",
@@ -12,7 +10,8 @@ const firebaseConfig = {
   measurementId: "G-V9MWDG62CV"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const provider = new GoogleAuthProvider();
-export {auth, provider};
+export {auth,provider};
