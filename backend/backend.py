@@ -59,4 +59,4 @@ while True:
     # Monitor behavior
     if monitor_behavior(requests_log):
         print('Abnormal behavior detected!')
-  ,
+  
