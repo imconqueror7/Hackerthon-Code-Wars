@@ -1,16 +1,19 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from '../styles/navbar.css'
 const navbar = () => {
   return (
     <>
-    <div className={styles.navbar}>
+ <div className="flex flex-wrap">
     <div>LOGO</div>
     <div>Home</div>
     <div>Team</div>
     <div>Contact Us</div>
-    <div className="Signup"></div>
-    <div className='Login'></div>
+    <div className="Signup"> Sigup</div>
+    <div className='Login'> Login</div>
     </div>
+
+    
     </>
   )
 }
