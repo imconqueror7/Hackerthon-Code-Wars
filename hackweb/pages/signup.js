@@ -3,6 +3,7 @@ import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 import Link from 'next/link';
 
+
 const Signup = () => {
     return (
         <div className="flex mb-[52rem]">

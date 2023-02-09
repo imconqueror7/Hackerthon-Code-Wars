@@ -1,0 +1,124 @@
+/* p,a,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+} */
+
+.sectionteam {
+	font-family: "Poppins", sans-serif;
+	padding: 80px 0;
+
+}
+
+.sectionteam .headersection {
+	margin-bottom: 50px;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  align-items: center
+}
+
+.sectionteam .headersection .smalltitle {
+    margin-bottom: 25px;
+	  font-size: 16px;
+    font-weight: 500;
+    color: #2069dd;
+ 
+}
+
+.sectionteam .headersection .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sectionteam .singleperson {
+	margin-top: 30px;
+	padding: 30px;
+	background-color: #f6f9ff;
+	border-radius: 5px;
+  
+}
+
+.sectionteam .singleperson:hover {
+	background: linear-gradient(to right,#2069dd, #0073f7);
+}
+
+.sectionteam .singleperson .personimage {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    /* background-image: url(../assets/Contactus/abhi.jpg); */
+}
+
+.sectionteam .singleperson:hover .personimage {
+	padding: 12px;
+    border: 4px dashed #fff;
+}
+
+.sectionteam .singleperson .personimage img {
+	width: 100%;
+    border-radius: 50%;
+}
+
+.sectionteam .singleperson .personimage .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #2069dd, #0094f7);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.sectionteam .singleperson:hover .personimage .icon {
+	background: none;
+	background-color: #fff;
+	color: #2069dd;
+}
+
+.sectionteam .singleperson .personinfo .fullname {
+	margin-bottom: 10px;
+	font-size: 28px;
+    font-weight: 700;
+}
+
+.sectionteam .singleperson .personinfo .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #2069dd;
+}
+
+.sectionteam .singleperson:hover .fullname,
+.sectionteam .singleperson:hover .speciality {
+	color: #fff;
+}
+.headersectionmain{
+  justify-content: center;
+  text-align: center;
+  
+}
+
+/* Social media icons  */
+
+.socialmediacard{
+    display:grid;
+    grid-template-columns: repeat( auto-fill, minmax(16rem, 1fr) );
+    grid-gap: 5rem;
+    padding:5rem;
+    background:#F5F7FA;
+}
+.socialmedia{
+    position: relative;
+    height:12rem;
+    box-shadow:0 0 2rem -1rem rgba(0,0,0,.05);
+    background-color: #2069dd;
+    border-radius: 10px;
+  
+}
