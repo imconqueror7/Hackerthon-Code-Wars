@@ -29,10 +29,6 @@ const Navbar = () => {
       name: "Home"
     },
     {
-      id: '/productpage',
-      name: "Products"
-    },
-    {
       id: '/contactpage',
       name: "Contact Us"
     },
