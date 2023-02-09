@@ -1,9 +1,9 @@
-import React from 'react'
+import Link from 'next/link';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const footer = () => {
   return (
     <div>footer</div>
-    
   )
 }
 
