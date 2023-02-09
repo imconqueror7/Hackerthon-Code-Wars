@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const footer = () => {
   return (
@@ -22,7 +22,7 @@ const footer = () => {
     <footer className="md:px-1 py-20 md:h-[23rem] h-[34rem] bg-gray-100 ">
         <div className="md:max-w-[70%] m-auto md:px-16 px-6 md:py-2 md:grid md:grid-cols-4 grid grid-cols-2">
             <div className='footer-about'>
-                      <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#712806] via-[#e97b21] to-[#f0c24c] ">CropConnect</h3>
+                      <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#712806] via-[#e97b21] to-[#f0c24c] ">HackWeb</h3>
                 <p className="text-gray-600 ">A small brief introduction about the website or about the working of the website. </p>
             </div>
             <div className="md:px-16 md:p-5 p-10">
@@ -37,9 +37,6 @@ const footer = () => {
               <div className=" md:flex grid grid-cols-3 p-3 ">
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
                 <a href="https://www.instagram.com/mardav_113/" target="blank"><FaInstagram /></a>
-                </div>
-                <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
-                  <a href="www.facebook.com" target="blank"><FaFacebook/></a>
                 </div>
                 <div className=" cursor-pointer md:text-2xl text-xl text-gray-500 hover:text-gray-700 hover:scale-110 duration-100 md:px-2 py-2">
                 <a href="https://twitter.com/mardav_13" target="blank"><FaTwitter/></a>
@@ -63,7 +60,7 @@ const footer = () => {
           </div>
           <div className="text-center">
             <p className="text-slate-400 mt-9 font-sans">
-              Copyright : CropConnect @{new Date().getFullYear()}
+              Copyright : HackWeb @{new Date().getFullYear()}
             </p>
             <p className="text-slate-400 font-sans">
               All Rights Reserved
