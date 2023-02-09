@@ -11,7 +11,7 @@ const footer = () => {
           </div>
           <div className='text-white'>
             <Link href="/">
-              <button className="bg-gradient-to-tr md:text-lg text-sm from-[#953508] via-[#ca6512] to-[#f3ba2b] md:h-10 md:w-32 h-8 w-20 hover:scale-105 duration-100 ease-in-out hover:tracking-wide rounded-md  ">Get Started</button>
+              <button className="bg-gradient-to-tr from-[#051087] via-[#2069dd] to-[#2fbded] md:text-lg text-sm md:h-10 md:w-32 h-8 w-20 hover:scale-105 duration-100 ease-in-out hover:tracking-wide rounded-md  ">Get Started</button>
             </Link>
           </div>
           <div className="text-gray-600 md:text-1xl text-sm">
@@ -22,7 +22,7 @@ const footer = () => {
     <footer className="md:px-1 py-20 md:h-[23rem] h-[34rem] bg-gray-100 ">
         <div className="md:max-w-[70%] m-auto md:px-16 px-6 md:py-2 md:grid md:grid-cols-4 grid grid-cols-2">
             <div className='footer-about'>
-                      <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#712806] via-[#e97b21] to-[#f0c24c] ">HackWeb</h3>
+            <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#030c6b] via-[#3d7ee6] to-[#54c7ee] ">HackWeb</h3>
                 <p className="text-gray-600 ">A small brief introduction about the website or about the working of the website. </p>
             </div>
             <div className="md:px-16 md:p-5 p-10">
@@ -55,7 +55,7 @@ const footer = () => {
             </div>
         </div>
         <div className="md:p-8 p-4" >
-          <div className="bg-gradient-to-tr from-[#712806] via-[#e97b21] to-[#f0c24c] h-1">
+          <div className="bg-gradient-to-tr from-[#030c6a] via-[#2069dd] to-[#2fbded] h-1">
           <hr/>
           </div>
           <div className="text-center">
