@@ -1,27 +1,17 @@
-import React, { useEffect, useState } from "react";
-import {auth,provider} from "./config";
-import {signInWithPopup} from "firebase/auth";
-import Home from "./Home";
+import { initializeApp } from "firebase/app";
+import {getAuth,GoogleAuthProvider} from "firebase/auth";
+const firebaseConfig = {
+  apiKey: "AIzaSyD-ud5wELd8Sb6qBkgljlYce15N6ZfqnPw",
+  authDomain: "hackweb-d5c9b.firebaseapp.com",
+  projectId: "hackweb-d5c9b",
+  storageBucket: "hackweb-d5c9b.appspot.com",
+  messagingSenderId: "46158534953",
+  appId: "1:46158534953:web:b6d6bdc2552d6d10a37f38",
+  measurementId: "G-V9MWDG62CV"
+};
 
-function SignIn(){
-    const [value,setValue] = useState('')
-    const handleClick =()=>{
-        signInWithPopup(auth,provider).then((data)=>{
-            setValue(data.user.email)
-            localStorage.setItem("email",data.user.email)
-        })
-    }
-
-    useEffect(()=>{
-        setValue(localStorage.getItem('email'))
-    })
-
-return (
-    <div>
-        {value?<Home/>:
-        <button onClick={handleClick}>Signin With Google</button>
-        }
-    </div>
-);
-}
-export default SignIn;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app)
+const provider = new GoogleAuthProvider();
+export {auth,provider};
