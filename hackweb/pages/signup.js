@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { auth, provider } from "./config";
-import { signInWithPopup } from "firebase/auth";
 import { MdWavingHand, MdLockOutline } from 'react-icons/md';
 import { FiMail } from 'react-icons/fi';
 import { BsPerson } from 'react-icons/bs';
 
 const Signup = () => {
-
-    const [value, setValue] = useState('')
-    const handleClick = () => {
-        signInWithPopup(auth, provider).then((data) => {
-            setValue(data.user.email)
-            localStorage.setItem("email", data.user.email)
-        })
-    }
-
-    useEffect(() => {
-        setValue(localStorage.getItem('email'))
-    })
 
     return (
         <div className="flex mb-[52rem]">
@@ -34,7 +19,7 @@ const Signup = () => {
                             <span className="font-normal">Hack</span>Web
                         </div>
                         <div className="py-4 ">
-                            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-[#1e3ecb] mb-2 ">Create Account</h2>
+                            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#0b0445] via-[#3079ef] to-[#2fd4ed] mb-2 ">Create Account</h2>
                             <div className="border-2 w-96 border-black inline-block mb-2"></div>
                             <p className="text-gray-400 mb-5"> Enter your personal details.</p>
                             <div className="flex flex-col items-center">
@@ -61,7 +46,7 @@ const Signup = () => {
                                     <input type="password" placeholder="Confirm Password" className="bg-gray-100 outline-none flex-1" />
                                 </div>
                             </div>
-                            <button onClick={handleClick} className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</button>
+                            <button className=" rounded-full py-2 px-12 inline-block font-semibold border-2 border-[#1e3ecb] text-[#1e3ecb] hover:text-[white] hover:bg-gradient-to-tr from-[#091275] via-[#2069dd] to-[#2fd4ed] hover:tracking-wider duration-100 hover:border-white">Sign Up</button>
                         </div>
                     </div>
                 </div>
