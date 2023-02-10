@@ -3,7 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const footer = () => {
   return (
-      <main>
+      <main className="mt-[10rem]">
         <section className="md:max-w-[50%] max-w-[85%] m-auto md:px-16 px-2 py-3 rounded-md transition-transform translate-y-10 bg-white">
       <div className="grid grid-cols-3 items-center md:gap-20 gap-4 ">
           <div className="text-gray-600 md:text-1xl text-sm">
