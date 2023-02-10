@@ -1,15 +1,8 @@
 import React from 'react'
 import Styles from '../styles/teampage.module.css';
-
-// import Accordion from 'sections/accordion';
 import { FaDAndD } from "react-icons/fa";
 import {FaFulcrum} from "react-icons/fa";
-import {FaInstagram} from "react-icons/fa"
 import Head from 'next/head';
-// import Chat from 'assets/widget/instagram.png';
-// import Community from 'assets/widget/twitter.png';
-// import Github from '../assets/widget/youtube.png'
-// import Growthpage from 'sections/growthpage';
 const teampage = () => {
   return (
  
@@ -17,18 +10,15 @@ const teampage = () => {
   <Head>
 	<title>Team Page</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/> 
-{/* <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> */}
 </Head>
 
 <section className={Styles.sectionteam}>
 		<div className={Styles.container}>
  
 			<div className={Styles.headersectionmain}>
-				{/* <div className="col-md-8 col-lg-6"> */}
 					<div className={Styles.headersection}>
 						<h3 className={Styles.smalltitle}>Elites</h3>
 						<h2 className={Styles.title}>Let's meet with our team members</h2>
-					{/* </div> */}
 				</div>
 			</div>
 
