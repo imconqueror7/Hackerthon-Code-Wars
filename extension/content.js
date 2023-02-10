@@ -58,7 +58,7 @@ function run() {
       style.appendChild(document.createTextNode(pageHeader));
 
       var title = document.createElement('title');
-      title.textContent = "RR Adblocker-Malware Protection";
+      title.textContent = "Hack-Web-Malware Protection";
       document.getElementsByTagName('head')[0].appendChild(title);
       document.getElementsByTagName('head')[0].appendChild(style);
 
@@ -68,11 +68,11 @@ function run() {
       h3.textContent = "A dangerous website has been blocked";
       var infoPara = document.createElement("p");
       infoPara.setAttribute("id", "myPara");
-      infoPara.textContent = "You were protected from visiting this website by RR Adblocker.";
+      infoPara.textContent = "You were protected from visiting this website by Hack Web.";
 
       var p2 = document.createElement("p");
       p2.setAttribute("id", "myPara2");
-      p2.textContent = "If this website has been wrongly blocked. Reach to us at: rutujrunwal001@gmail.com ";
+      p2.textContent = "If this website has been wrongly blocked. Reach to us at: 107@gmail.com ";
 
       myDiv.appendChild(h3);
       myDiv.appendChild(infoPara);
