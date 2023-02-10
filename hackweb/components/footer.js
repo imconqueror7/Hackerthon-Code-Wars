@@ -19,7 +19,7 @@ const footer = () => {
           </div>
       </div>
     </section>
-    <footer className="md:px-1 py-20 md:h-[23rem] h-[34rem] bg-gray-100 ">
+    <footer className="md:px-1 py-20 md:h-[23rem] h-[34rem] bg-gray-50 ">
         <div className="md:max-w-[70%] m-auto md:px-16 px-6 md:py-2 md:grid md:grid-cols-4 grid grid-cols-2">
             <div className='footer-about'>
             <h3 className="font-bold font-sans text-lg text-transparent bg-clip-text bg-gradient-to-tr from-[#030c6b] via-[#3d7ee6] to-[#54c7ee] ">HackWeb</h3>
